@@ -1,7 +1,8 @@
 package com.example.domain.repositories
 
 import com.example.domain.model.MyOrders
+import kotlinx.coroutines.flow.Flow
 
 interface MyOrderRepo {
-    suspend fun getAllOrder() : MyOrders
+     fun getAllOrder() : Flow<MyOrders>
 }
